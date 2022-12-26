@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+
+}
+
+.secion-content {
+
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.attribution {
+    position: relative;
+    top: 40px;
+}
+
+
+span {
+    margin: 25px 0;
+    display: block;
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+
+}
+
+
+
+p {
+    line-height: 1.6;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+
+    font-size: 15px;
+}
+
+
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+
+    padding: 7px;
+
+    border-radius: 72px;
+
+    font-size: clamp(0.83rem, calc(0.72rem + 0.56vw), 1.00rem);
+    margin-top: 100px;
+
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+
+
+.secion-content div {
+
+    padding: 30px;
+
+}
+
+.SEDANS {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+}
+
+.SEDANS button {
+    color: hsl(31, 77%, 52%);
+
+}
+
+.SEDANS button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.SUVS {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.SUVS button {
+    color: hsl(184, 100%, 22%);
+}
+
+.SUVS button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+.LUXURY {
+    background-color: hsl(179, 100%, 13%);
+
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.LUXURY button {
+    color: hsl(179, 100%, 13%);
+}
+
+.LUXURY button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .secion-content {
+        flex-direction: row;
+
+        width: 70vw;
+    }
+
+    .SEDANS {
+
+
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 7px;
+
+    }
+
+    .LUXURY {
+
+
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    img {
+        width: 90px;
+    }
+
+    span {
+        font-size: clamp(2.50rem, calc(0.53rem + 3.07vw), 4.38rem);
+    }
+
+    button {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: clamp(1.00rem, calc(0.41rem + 0.92vw), 1.56rem);
+        ;
+    }
+
+    p {
+        font-size: clamp(0.94rem, calc(0.61rem + 0.51vw), 1.25rem);
+        ;
+    }
+}
